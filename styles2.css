@@ -1,0 +1,250 @@
+/* Box Sizing & Clean Page Setup */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eef2f5;
+  color: #222222;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Part 3: Header */
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 15px;
+  border: 2px solid #1a252f;
+  border-radius: 10px;
+}
+
+.game-header h1 {
+  font-size: 22px;
+}
+
+.game-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  font-weight: bold;
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 8px 14px;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Part 4: Game Area */
+.game-area {
+  background-color: #87ceeb;
+  border: 2px solid #5fa6c1;
+  border-radius: 10px;
+  height: 340px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-message {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 6px 14px;
+  border: 1px solid #777777;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.game-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.row-actors {
+  justify-content: space-around;
+}
+
+.row-middle {
+  justify-content: center;
+}
+
+.row-bottom {
+  justify-content: space-between;
+}
+
+.player {
+  background-color: #27ae60;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px 18px;
+  border: 2px solid #1e8449;
+  border-radius: 6px;
+}
+
+.star {
+  background-color: #f39c12;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px 18px;
+  border: 2px solid #b9770e;
+  border-radius: 6px;
+}
+
+.platform {
+  background-color: #7f8c8d;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 12px 26px;
+  border: 2px solid #566573;
+  border-radius: 4px;
+}
+
+/* Part 5: Game Panels */
+.game-panels {
+  display: flex;
+  gap: 20px;
+}
+
+.panel {
+  flex: 1;
+  background-color: #ffffff;
+  border: 2px solid #bdc3c7;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.panel h2 {
+  font-size: 18px;
+  color: #2c3e50;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 6px;
+}
+
+/* Part 6: Controls Panel */
+.controls-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.control-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-control {
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.btn-jump {
+  padding: 8px 24px;
+  font-weight: bold;
+}
+
+/* Part 7: Inventory Panel */
+.inventory-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.item {
+  background-color: #f8f9fa;
+  border: 2px solid #ccd1d9;
+  border-radius: 8px;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Part 8: Quest Panel */
+.quest-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quest-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 10px 14px;
+  border: 1px solid #dcdfe4;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Footer */
+.game-footer {
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 15px;
+  border: 2px solid #1a252f;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Part 11: Responsive Media Query */
+@media (max-width: 768px) {
+  .game-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .game-info {
+    justify-content: center;
+  }
+
+  .game-panels {
+    flex-direction: column;
+  }
+
+  .game-area {
+    height: 300px;
+  }
+}
