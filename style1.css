@@ -1,0 +1,590 @@
+/* =========================================================
+   1. RESET / BASIC SETTINGS
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7fb;
+    color: #222;
+}
+
+
+/* =========================================================
+   2. GENERAL ELEMENTS
+   ========================================================= */
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   3. HEADER
+   ========================================================= */
+
+header {
+    background-color: #111827;
+    color: white;
+
+    padding: 25px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 28px;
+    margin-bottom: 3px;
+}
+
+.logo p {
+    color: #cbd5e1;
+    margin: 0;
+}
+
+
+/* =========================================================
+   4. NAVIGATION
+   ========================================================= */
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   5. MAIN
+   ========================================================= */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* =========================================================
+   6. SECTIONS
+   ========================================================= */
+
+section {
+    background-color: white;
+
+    margin: 40px 0;
+    padding: 50px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   7. HOME
+   ========================================================= */
+
+#home {
+    min-height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home h2 {
+    font-size: 45px;
+    max-width: 700px;
+}
+
+#home p {
+    font-size: 18px;
+    max-width: 650px;
+    color: #555;
+}
+
+#home a {
+    margin-top: 10px;
+}
+
+
+/* =========================================================
+   8. BUTTONS
+   ========================================================= */
+
+button {
+    border: none;
+
+    padding: 12px 22px;
+
+    background-color: #2563eb;
+    color: white;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   9. PROFILE
+   ========================================================= */
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #2563eb;
+}
+
+.profile-info {
+    max-width: 600px;
+}
+
+.profile-info h3 {
+    font-size: 28px;
+}
+
+
+/* =========================================================
+   10. LISTS
+   ========================================================= */
+
+ul,
+ol {
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+dl {
+    margin-top: 15px;
+}
+
+dt {
+    font-weight: bold;
+    color: #2563eb;
+    margin-top: 15px;
+}
+
+dd {
+    margin-left: 20px;
+    color: #555;
+}
+
+
+/* =========================================================
+   11. COURSE CARDS
+   ========================================================= */
+
+.course {
+    background-color: #f8fafc;
+
+    padding: 25px;
+
+    margin: 20px 0;
+
+    border-left: 5px solid #2563eb;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.course:hover {
+    transform: translateX(5px);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.course p {
+    color: #555;
+}
+
+.course button {
+    margin-top: 10px;
+}
+
+
+/* =========================================================
+   12. TABLE
+   ========================================================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    margin-top: 20px;
+
+    background-color: white;
+}
+
+th,
+td {
+    padding: 15px;
+
+    border: 1px solid #ddd;
+
+    text-align: left;
+}
+
+th {
+    background-color: #111827;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+tbody tr:hover {
+    background-color: #e0ecff;
+}
+
+tfoot td {
+    font-weight: bold;
+    background-color: #eef2ff;
+}
+
+
+/* =========================================================
+   13. FORM
+   ========================================================= */
+
+form {
+    max-width: 700px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+
+    background-color: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+
+/* =========================================================
+   14. RADIO BUTTONS & CHECKBOXES
+   ========================================================= */
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+
+    margin-right: 6px;
+    margin-bottom: 15px;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+
+/* =========================================================
+   15. FILE INPUT
+   ========================================================= */
+
+input[type="file"] {
+    padding: 10px;
+    background-color: #f8fafc;
+}
+
+
+/* =========================================================
+   16. TEXTAREA
+   ========================================================= */
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+
+/* =========================================================
+   17. FORM BUTTONS
+   ========================================================= */
+
+button[type="reset"] {
+    background-color: #64748b;
+    margin-left: 10px;
+}
+
+button[type="reset"]:hover {
+    background-color: #475569;
+}
+
+
+/* =========================================================
+   18. EXTRA HTML ELEMENTS
+   ========================================================= */
+
+mark {
+    background-color: #fef08a;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+strong {
+    color: #111827;
+}
+
+em {
+    color: #2563eb;
+}
+
+hr {
+    border: none;
+
+    border-top: 1px solid #ddd;
+
+    margin: 25px 0;
+}
+
+
+/* =========================================================
+   19. DETAILS / SUMMARY
+   ========================================================= */
+
+details {
+    background-color: #f8fafc;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    border: 1px solid #e2e8f0;
+}
+
+summary {
+    cursor: pointer;
+
+    font-weight: bold;
+
+    color: #2563eb;
+}
+
+
+/* =========================================================
+   20. FOOTER
+   ========================================================= */
+
+footer {
+    background-color: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+
+    margin-top: 50px;
+}
+
+footer p {
+    margin-bottom: 10px;
+    color: #cbd5e1;
+}
+
+footer a {
+    color: #60a5fa;
+}
+
+
+/* =========================================================
+   21. RESPONSIVE DESIGN
+   ========================================================= */
+
+/* Tablets */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    section {
+        padding: 30px 20px;
+    }
+
+    #home h2 {
+        font-size: 35px;
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}
+
+
+/* Phones */
+
+@media (max-width: 500px) {
+
+    main {
+        width: 94%;
+    }
+
+    section {
+        margin: 25px 0;
+        padding: 25px 15px;
+    }
+
+    #home {
+        min-height: 350px;
+    }
+
+    #home h2 {
+        font-size: 30px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    .profile img {
+        width: 150px;
+        height: 150px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 7px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    button[type="reset"] {
+        margin-left: 0;
+    }
+}
